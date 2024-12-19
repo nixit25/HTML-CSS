@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <style>
+
+        .box{
+            height: 300px;
+            color: blue;
+            border: 20px dashed red;
+        }
+
+        .background-color{
+            background-color: yellow ;
+        }
+        
+        .background-image{
+            font-color: Red;
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+        }
+
+        .background-attachment {
+            background-color: yellow; 
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+            background-attachment:fixed ;
+            /* background-attachment:local ; */
+            /* background-attachment:scroll ; */
+        }
+
+        .background-clip {
+            background-color:yellow; 
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+            /* background-clip: padding-box; */
+            /* background-clip: border-box; */
+            background-clip: content-box;
+            
+        }
+        .background-origin {
+            background-color:yellow; 
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+            /* background-origin:border-box ; */
+            background-origin:content-box ;
+            /* background-origin:padding-box ; */
+        }
+        .background-position {
+            background-color:yellow; 
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+            /* background-position:0% 20%; */
+            /* background-position:center 20% ; */
+            background-position:10px ;
+        }
+        .background-repeat {
+            background-color: yellow; 
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+            background-position:center center ;
+            background-repeat:no-repeat ;
+            /* background-repeat:repeat-x ; */
+            /* background-repeat:repeat-y ; */
+        }
+        .background-size {
+            background-color:yellow; 
+            background-image: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg");
+            background-position:center 80% ;
+            background-repeat:no-repeat ;
+            /* background-size: contain; */
+            background-size: cover;
+        }
+        .shorthand{
+           background: url("https://img.freepik.com/premium-photo/green-branch-plant-with-neon-orange-glow-against-dark-starry-sky-generative-ai_76964-10382.jpg") no-repeat center center /cover; 
+        }
+        .linear-gradient{
+           /* background:linear-gradient(45deg, orange,white,green);  */
+           background: linear-gradient(orange,white,green);
+
+        }
+        .radial-gradient{
+           background:radial-gradient(orange,white,green) 
+        }
+    </style>
+</head>
+<body>
+
+    <h1><center>Constituent properties</center></h1>
+
+    <fieldset>
+        <strong>This property is a shorthand for the following CSS properties:</strong>
+
+        <ul>
+            <li>background-color</li> 
+            <li>background-image</li> 
+            <li>background-attachment</li> 
+            <li>background-clip</li> 
+            <li>background-origin</li> 
+            <li>background-position</li> 
+            <li>background-repeat</li> 
+            <li>background-size</li> 
+            <li>background: repeat scroll 0% 0% / auto padding-box border-box none transparent;</li> 
+        </ul>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-color">Background-color</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-image">background-image</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-attachment">background-attachment</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-clip">background-clip</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-origin">background-origin</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-position">background-position</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class=" box background-repeat">background-repeat</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <div class="box background-size">background-size</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+    <div class="box linear-gradient"> linear-gradient</div>
+</fieldset>
+
+    <br>
+
+    <fieldset>
+     <div class="box radial-gradient"> radial-gradient</div>
+    </fieldset>
+</body>
+</html>

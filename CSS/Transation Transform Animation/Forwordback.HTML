@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forwordback</title>
+
+    <style>
+        h1{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .demo {
+            border-top: 100px solid #ccc;
+            height: 300px;
+        }
+
+        @keyframes grow {
+            0% {
+                font-size: 0;
+            }
+
+            100% {
+                font-size: 30px;
+            }
+        }
+
+        .demo:hover .grows {
+            animation-name: grow;
+            animation-duration: 5s;
+        }
+
+        .demo:hover .growsandstays {
+            animation-name: grow;
+            animation-duration: 5s;
+            /* animation-fill-mode: forwards;
+            animation-fill-mode: backwards; */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Forwordback</h1>
+
+    <br>
+    <br>
+
+    <p>Move your mouse over the gray box!</p>
+    <div class="demo">
+        <div class="growsandstays">This grows and stays big.</div>
+        <div class="grows">This just grows.</div>
+    </div>
+    
+</body>
+</html>

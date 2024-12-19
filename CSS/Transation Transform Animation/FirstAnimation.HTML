@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstAnimation</title>
+
+    <style>
+        .deco {
+            border: 2px solid;
+            border-color: white;
+            /* box-shadow: 3px 5px 9px; */
+            /* border-radius: 7px; */
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            color: yellowgreen;
+            text-shadow: 4px 4px 4px lightslategray;
+        }
+
+        .box {
+           
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: green;
+
+        }
+
+        .clo {
+            animation-name: NO;
+            animation-duration: 5s;
+            /* animation-delay: 1s; */
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes NO {
+            0% {
+                /* transform: rotate(0deg); */
+                color: orangered;
+                border-radius: 10%;
+                background-color: teal;
+                border-bottom: 2px solid grey;
+                transform: scale(0.5);
+            }
+
+            50% {
+                transform: scale(1);
+                color: green;
+                border-radius: 20%;
+            border-bottom: 2px solid grey;
+            background-color: purple;
+            border: 2px solid orangered;
+            transform: rotate(20deg);
+            }
+
+
+            100% {
+                color: blue;
+                transform: scale(2);
+                border: 5px solid purple;
+            background-color: grey;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="deco">FirstAnimation</h1>
+
+    <br>
+    <br>
+
+    <div class="clo box" id="row">
+
+    </div>
+
+</body>
+
+</html>

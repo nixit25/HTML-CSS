@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex Intro</title>
+
+    <style>
+        .Colum1{
+            box-sizing: border-box;
+            background-color: lightslategrey ;
+            border: 2px solid;
+            flex-wrap: nowrap;
+            display: flex;
+            height:200px;
+        }
+
+        .Colum{
+            border: 2px solid;
+            
+            
+        }
+
+        .Colum3{
+            box-sizing: border-box;
+            background-color: lightslategrey ;
+            border: 2px solid;
+            flex-wrap: nowrap;
+            display: flex;
+            height:200px;
+            flex-direction: row-reverse;
+        }
+
+        .Colum2{
+            border: 2px solid;
+        }
+
+        .Column4{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 200px;
+            flex-wrap: nowrap ;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Colum5{
+           border: 2px solid;
+        }
+
+        .Column6{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 200px;
+            flex-wrap: nowrap ;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        
+        .Colum7{
+            border: 2px solid;
+         }
+
+        .No-Wrap1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            height: 250px;
+        }
+
+        .No-Wrap2{
+            width: 40%;
+            border: 2px solid;
+            height: 30px;
+        }
+
+        .Wrap1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .Wrap2{
+            width: 40%;
+            border: 2px solid;
+            height: 30px;
+        }
+
+        .Wrap-reverse1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap-reverse;
+        }
+
+        .Wrap-reverse2{
+            width: 40%;
+            border: 2px solid;
+            height: 30px;
+        }
+
+        .Row-NoWrap1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: flex-start;
+            flex-flow: row nowrap;
+        }
+
+        .Row-NoWrap2{
+            border: 2px solid;
+            height: 40%;
+            width: 40%;
+        }
+
+        .Column-Reverse1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            flex-flow: column-reverse;
+        }
+
+        .Column-Reverse2{
+            width: 40%;
+            height: 40%;
+            border: 2px solid;
+        }
+
+        .column-Wrap1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .column-Wrap2{
+            width: 40%;
+            height: 40%;
+            border: 2px solid;
+        }
+
+        .Row-ReverseWrap-Reverse1{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            flex-flow: Row-Reverse Wrap-Reverse;
+        }
+
+        .Row-ReverseWrap-Reverse2{
+            width: 40%;
+            height: 40%;
+            border: 2px solid;
+        }
+
+        .Order{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            display: flex;
+           
+            
+            height: 250px;
+            
+            
+        }
+
+        .Order4{
+            border: 2px solid;
+            height: 200px;
+            width: 200px;
+            order: 0;
+        }
+
+        .Order5{
+            border: 2px solid;
+            height: 200px;
+            width: 200px;
+        }
+
+        .Flex-Start{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            display: flex;
+            height: 250px;
+            justify-content: space-evenly;
+        }
+
+        .Flex-Start1{
+            border: 2px solid;
+            height: 100px;
+            width: 40px;
+        }
+
+        .Flex-End{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .Flex-End1{
+            border: 2px solid;
+            height: 100px;
+            width: 40px;
+        }
+
+        .Center{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Center1{
+            border: 2px solid;
+            height: 100px;
+            width: 40px;
+        }
+
+        .Space-Between{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Space-Between1{
+           border: 2px solid;
+            height: 100px;
+            width: 40px 
+        }
+
+        .Space-Around{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .Space-Around1{
+            border: 2px solid;
+            height: 100px;
+            width: 40px 
+        }
+
+        .space-evenly{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .space-evenly1{
+            border: 2px solid;
+            height: 100px;
+            width: 40px 
+        }
+
+        .stretch{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .stretch1{
+            border: 2px solid;
+            height: 130px;
+            width: 10%
+        }
+
+        .Flex-Start{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .Flex-Start1{
+            border: 2px solid;
+            height: 130px;
+            width: 10%;
+        }
+
+        .Flex-End{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .Flex-End1{
+            border: 2px solid;
+            height: 130px;
+            width: 10%;
+        }
+
+        .Center{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .Center1{
+            border: 2px solid;
+            height: 130px;
+            width: 10%;
+        }
+
+        .baseline{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .baseline1{
+            border: 2px solid;
+            height: 130px;
+            width: 10%;
+        }
+
+        .Auto{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 250px;
+            display: flex;
+            align-items: auto;
+            gap: 10px;
+        }
+
+        .Auto1{
+            border: 2px solid;
+            height: 130px;
+            width: 10%;
+        }
+
+        .Flex-Start{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .Flex-Start1{
+            width: 20%;
+        }
+
+        .Flex-End{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+        .Flex-End1{
+            width: 20%;
+        }
+
+        .Center{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        .Center1{
+            width: 20%;
+        }
+
+        .Space-Between{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .Space-Between1{
+            width: 40%;
+        }
+
+        .Space-Around{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        .Space-Around1{
+            width: 450px;
+        }
+
+        .Stretch{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        .Stretch1{
+            width: 40%;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .Flex-Grow{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+        }
+
+        .Flex-Grow1{
+            width: 20%;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .Flex-Grow2{
+            
+            border: 2px solid;
+            box-sizing: border-box;
+            flex-grow: 1;
+        }
+
+        .Flex-Shrink{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+        }
+
+        .Flex-Shrink1{
+            width: 20%;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .Flex-Shrink2{
+            
+            border: 2px solid;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .Flex-Basis{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+        }
+
+        .Flex-Basis1{
+            width: 20%;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .Flex-Basis2{
+            
+            border: 2px solid;
+            box-sizing: border-box;
+            flex-basis:50%;
+        }
+
+        .Flex-values{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: lightslategray;
+            height: 400px;
+            display: flex;
+        }
+
+        .Flex-values1{
+            width: 20%;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .Flex-values2{
+            
+            border: 2px solid;
+            box-sizing: border-box;
+            flex:0 1 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><center>Display Flex Intro</center></h1>
+
+    <fieldset>
+        <ul>
+            <h2>Ordering &amp; Orientation</h2>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>order</li>
+
+            <br>
+
+            <h2>Alignment</h2>
+            <li>justify-content</li>
+            <li>align-items, align-self</li>
+            <li>align-content</li>
+
+            <br>
+
+            <h2>Flexibility</h2>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>Flex values</li>
+        </ul>
+    </fieldset>
+
+    <br>
+
+    <h1>Exampe:</h1>
+
+    <fieldset>
+        <legend><h2>Ordering &amp; Orientation</h2></legend>
+       
+        <fieldset>
+            <legend><strong>flex-direction</strong></legend>
+        
+            <br>
+
+            <li><strong>row </strong></li>
+
+            <br>
+            
+            <div class="Colum1">
+                <div class="Colum">Colum 1</div>
+                <div class="Colum">Colum 2</div>
+                <div class="Colum">Colum 3</div>
+                <div class="Colum">Colum 4</div>
+            </div>
+        
+    
+        <br>
+    
+        
+       
+    
+            <li><strong>row-reverse </strong></li>
+            
+            <br>
+            
+            <div class="Colum3">
+                <div class="Colum2">Colum 1</div>
+                <div class="Colum2">Colum 2</div>
+                <div class="Colum2">Colum 3</div>
+                <div class="Colum2">Colum 4</div>
+            </div>
+
+            <br>
+
+            <li>
+                <strong>Column</strong>
+            </li>
+
+            <br>
+
+            <div class="Column4">
+                <div class="Colum5">Colum 1</div>
+                <div class="Colum5">Colum 2</div>
+                <div class="Colum5">Colum 3</div>
+                <div class="Colum5">Colum 4</div>
+            </div>
+
+            <br>
+
+            <li>
+                <strong>Column-reverse</strong>
+            </li>
+
+            <br>
+
+            <div class="Column6">
+                <div class="Colum7">Colum 1</div>
+                <div class="Colum7">Colum 2</div>
+                <div class="Colum7">Colum 3</div>
+                <div class="Colum7">Colum 4</div>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+
+        <fieldset>
+            <legend><strong>Flex-Wrap</strong></legend> 
+
+            <br>
+
+            <li><strong>No-Wrap</strong></li>
+
+            <br>
+
+            <div class="No-Wrap1">
+                <div class="No-Wrap2">1</div>
+                <div class="No-Wrap2">2</div>
+                <div class="No-Wrap2">3</div>
+                <div class="No-Wrap2">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Wrap</strong></li>
+
+            <br>
+
+            <div class="Wrap1">
+                <div class="Wrap2">1</div>
+                <div class="Wrap2">2</div>
+                <div class="Wrap2">3</div>
+                <div class="Wrap2">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Wrap-reverse</strong></li>
+
+            <br>
+
+            <div class="Wrap-reverse1">
+                <div class="Wrap-reverse2">1</div>
+                <div class="Wrap-reverse2">2</div>
+                <div class="Wrap-reverse2">3</div>
+                <div class="Wrap-reverse2">4</div>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Flex-Flow</strong></legend>
+
+            <br>
+
+            <li><strong>Row-NoWrap</strong></li>
+
+            <br>
+
+            <div class="Row-NoWrap1">
+                <div class="Row-NoWrap2">1</div>
+                <div class="Row-NoWrap2">2</div>
+                <div class="Row-NoWrap2">3</div>
+                <div class="Row-NoWrap2">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Column-Reverse</strong></li>
+
+            <br>
+
+            <div class="Column-Reverse1">
+                <div class="Column-Reverse2">1</div>
+                <div class="Column-Reverse2">2</div>
+                <div class="Column-Reverse2">3</div>
+                <div class="Column-Reverse2">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>column-Wrap</strong></li>
+
+            <br>
+
+            <div class="column-Wrap1">
+                <div class="column-Wrap2">1</div>
+                <div class="column-Wrap2">2</div>
+                <div class="column-Wrap2">3</div>
+                <div class="column-Wrap2">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Row-Reverse Wrap-Reverse</strong></li>
+
+            <br>
+
+            
+            <div class="Row-ReverseWrap-Reverse1">
+                <div class="Row-ReverseWrap-Reverse2">1</div>
+                <div class="Row-ReverseWrap-Reverse2">2</div>
+                <div class="Row-ReverseWrap-Reverse2">3</div>
+                <div class="Row-ReverseWrap-Reverse2">4</div>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Order</strong></legend>
+
+            <br>
+
+            <strong>-1 0 1</strong>
+
+            <br>
+
+            <div class="Order">
+                <div class="Order5">1</div>
+                <div class="Order5">2</div>
+                <div class="Order4">3</div>
+                <div class="Order5">4</div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>
+            <strong> Alignment</strong>
+        </legend>
+
+        <br>
+
+        <fieldset>
+            <legend>
+                <strong>Justify-Content</strong>
+            </legend>
+            
+            <br>
+
+            <li><strong>Flex-Start</strong></li>
+
+            <br>
+
+            <div class="Flex-Start">
+                <div class="Flex-Start1">1</div>
+                <div class="Flex-Start1">2</div>
+                <div class="Flex-Start1">3</div>
+                <div class="Flex-Start1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Flex-End</strong></li>
+
+            <br>
+
+            
+            <div class="Flex-End">
+                <div class="Flex-End1">1</div>
+                <div class="Flex-End1">2</div>
+                <div class="Flex-End1">3</div>
+                <div class="Flex-End1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Center</strong></li>
+
+            <br>
+
+            <div class="Center">
+                <div class="Center1">1</div>
+                <div class="Center1">2</div>
+                <div class="Center1">3</div>
+                <div class="Center1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Space-Between</strong></li>
+
+            <br>
+
+            <div class="Space-Between">
+                <div class="Space-Between1">1</div>
+                <div class="Space-Between1">2</div>
+                <div class="Space-Between1">3</div>
+                <div class="Space-Between1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Space-Around</strong></li>
+
+            
+            <br>
+
+            <div class="Space-Around">
+                <div class="Space-Around1">1</div>
+                <div class="Space-Around1">2</div>
+                <div class="Space-Around1">3</div>
+                <div class="Space-Around1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>space-evenly</strong></li>
+
+            
+            <br>
+
+            <div class="space-evenly">
+                <div class="space-evenly1">1</div>
+                <div class="space-evenly1">2</div>
+                <div class="space-evenly1">3</div>
+                <div class="space-evenly1">4</div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+
+    <br>
+
+    <fieldset>
+        <legend>
+            <strong>Align-Items, Align-Self</strong>
+        </legend>
+
+        <br>
+
+        <fieldset>
+            <legend>Align-Items,Align-Self</legend>
+
+            
+        <br>
+
+       
+
+        <li><strong>Stretch</strong></li>
+
+        
+        <br>
+
+        <div class="stretch">
+            <div class="stretch1"><strong>Ut enim minim</strong>
+            </div>
+            <div class="stretch1">Ad veni
+            </div>
+            <div class="stretch1">Quis nostrud exercitation neminaes
+            </div>
+            <div class="stretch1">Duis aute irure dolor
+            </div>
+        </div>
+
+             
+        <br>
+
+       
+
+        <li><strong>Flex-Start</strong></li>
+
+        
+        <br>
+
+        <div class="Flex-Start">
+            <div class="Flex-Start1"><strong>Ut enim minim</strong>
+            </div>
+            <div class="Flex-Start1">Ad veni
+            </div>
+            <div class="Flex-Start1">Quis nostrud exercitation neminaes
+            </div>
+            <div class="Flex-Start1">Duis aute irure dolor
+            </div>
+        </div>
+
+
+        <br>
+
+       
+
+        <li><strong>Flex-End</strong></li>
+
+        
+        <br>
+
+        <div class="Flex-End">
+            <div class="Flex-End1"><strong>Ut enim minim</strong>
+            </div>
+            <div class="Flex-End1">Ad veni
+            </div>
+            <div class="Flex-End1">Quis nostrud exercitation neminaes
+            </div>
+            <div class="Flex-End1">Duis aute irure dolor
+            </div>
+        </div>
+
+        <br>
+
+       
+
+        <li><strong>Center</strong></li>
+
+        
+        <br>
+
+        <div class="Center">
+            <div class="Center1"><strong>Ut enim minim</strong>
+            </div>
+            <div class="Center1">Ad veni
+            </div>
+            <div class="Center1">Quis nostrud exercitation neminaes
+            </div>
+            <div class="Center1">Duis aute irure dolor
+            </div>
+        </div>
+
+        <br>
+
+       
+
+        <li><strong>Baseline</strong></li>
+
+        
+        <br>
+
+        <div class="baseline">
+            <div class="baseline1"><strong>Ut enim minim</strong>
+            </div>
+            <div class="baseline1">Ad veni
+            </div>
+            <div class="baseline1">Quis nostrud exercitation neminaes
+            </div>
+            <div class="baseline1">Duis aute irure dolor
+            </div>
+        </div>
+
+        <br>
+
+       
+
+        <li><strong>Auto</strong></li>
+
+        
+        <br>
+
+        <div class="Auto">
+            <div class="Auto1"><strong>Ut enim minim</strong>
+            </div>
+            <div class="Auto1">Ad veni
+            </div>
+            <div class="Auto1">Quis nostrud exercitation neminaes
+            </div>
+            <div class="Auto1">Duis aute irure dolor
+            </div>
+        </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Align-Content</strong></legend>
+
+            <br>
+
+            <li><strong>Flex-Start</strong></li>
+
+            <br>
+
+            <div class="Flex-Start">
+                <div class="Flex-Start1">1</div>
+                <div class="Flex-Start1">2</div>
+                <div class="Flex-Start1">3</div>
+                <div class="Flex-Start1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Flex-End</strong></li>
+
+            <br>
+
+            <div class="Flex-End">
+                <div class="Flex-End1">1</div>
+                <div class="Flex-End1">2</div>
+                <div class="Flex-End1">3</div>
+                <div class="Flex-End1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Center</strong></li>
+
+            <br>
+
+            <div class="Center">
+                <div class="Center1">1</div>
+                <div class="Center1">2</div>
+                <div class="Center1">3</div>
+                <div class="Center1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Space-Between</strong></li>
+
+            <br>
+
+            <div class="Space-Between">
+                <div class="Space-Between1">1</div>
+                <div class="Space-Between1">2</div>
+                <div class="Space-Between1">3</div>
+                <div class="Space-Between1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Space-Around</strong></li>
+
+            <br>
+
+            <div class="Space-Around">
+                <div class="Space-Around1">1</div>
+                <div class="Space-Around1">2</div>
+                <div class="Space-Around1">3</div>
+                <div class="Space-Around1">4</div>
+            </div>
+
+            <br>
+
+            <li><strong>Stretch</strong></li>
+
+            <br>
+
+            <div class="Stretch">
+                <div class="Stretch1">1</div>
+                <div class="Stretch1">2</div>
+                <div class="Stretch1">3</div>
+                <div class="Stretch1">4</div>
+            </div>
+        </fieldset>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><strong>Flexibility</strong></legend>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Flex-Grow</strong></legend>
+            <li><strong>0,1</strong></li>
+
+            <br>
+
+            <div  class="Flex-Grow">
+                <div class="Flex-Grow1">1</div>
+                <div class="Flex-Grow1">2</div>
+                <div class="Flex-Grow2">3</div>
+                <div class="Flex-Grow1">4</div>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Flex-Shrink</strong></legend>
+            <li><strong>1,0</strong></li>
+
+            <br>
+
+            <div  class="Flex-Shrink">
+                <div class="Flex-Shrink1">1</div>
+                <div class="Flex-Shrink1">2</div>
+                <div class="Flex-Shrink2">3</div>
+                <div class="Flex-Shrink1">4</div>
+            </div>
+
+            <br>
+
+        <fieldset>
+
+            <legend><strong>Flex-Basis</strong></legend>
+            <li><strong>30%,50%,Content,Auto</strong></li>
+
+            <br>
+
+            <div  class="Flex-Basis">
+                <div class="Flex-Basis1">1</div>
+                <div class="Flex-Basis1">2</div>
+                <div class="Flex-Basis2">3</div>
+                <div class="Flex-Basis1">4</div>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Flex values </strong></legend>
+            <li><strong>0 1 auto,0 1 30%,1 0 30%,none</strong></li>
+
+            <br>
+
+            <div  class="Flex-values ">
+                <div class="Flex-values1">1</div>
+                <div class="Flex-values1">2</div>
+                <div class="Flex-values2">3</div>
+                <div class="Flex-values1">4</div>
+            </div>
+        </fieldset>
+    </fieldset>
+    
+</body>
+</html>

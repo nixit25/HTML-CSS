@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        p ::after{
+            content: "Top Technology";
+        }
+
+        a {
+            color: #0000ff;
+            text-decoration: none;
+          }
+          
+          .local-link::before {
+            content: '🔗';
+          }
+
+          .first-letter::first-letter{
+            font-size: 30px;
+            color: red;
+          }
+
+          .first-line::first-line{
+            font-size: 30px;
+            color: brown;
+            text-decoration: underline;
+          }
+          
+          .selection::selection{
+            color: red;
+            background-color: blanchedalmond;
+          }
+         
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        <center>All CSS Pseudo Elements</center>
+    </h1>
+
+    <table border="1">
+        <tbody>
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Example description</th>
+            </tr>
+            <tr>
+                <td><a href="#">::after</a></td>
+                <td>p::after</td>
+                <td>Insert content after every &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="#">::before</a></td>
+                <td>p::before</td>
+                <td>Insert content before every &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="#">::first-letter</a></td>
+                <td>p::first-letter</td>
+                <td>Selects the first letter of every &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="#">::first-line</a></td>
+                <td>p::first-line</td>
+                <td>Selects the first line of every &lt;p&gt; element</td>
+            </tr>
+           
+            <tr>
+                <td><a href="#">::selection</a></td>
+                <td>p::selection</td>
+                <td>Selects the portion of an element that is selected by a user</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <fieldset>
+        <h2>
+            ::after
+        </h2>
+
+        <p>
+            In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
+        </p>
+
+        <strong>Example:</strong>
+
+        <div class="after">Nixit Tank</div>
+        <div class="after">Om Tank</div>
+        <div class="after">Vishal Tank</div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <h2>
+            ::before
+        </h2>
+
+        <p>
+            In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
+        </p>
+
+        <strong>Example:</strong>
+
+        <p>
+            Learning resources for web developers can be found all over the internet. Try out
+            <a class="local-link" href="https://web.dev/">web.dev</a>, <a class="local-link" href="https://www.w3schools.com/">w3schools.com</a> or our
+            <a href="https://developer.mozilla.org/" class="local-link">MDN web docs</a>.
+          </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <h2>
+            ::first-letter
+        </h2>
+
+        <p>
+            The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block container, but only when not preceded by other content (such as images or inline tables).
+        </p>
+
+        <strong>Example:</strong>
+
+        <p class="first-letter">
+            Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+        </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <h2>
+            ::first-line
+        </h2>
+
+        <p>
+            The ::first-line CSS pseudo-element applies styles to the first line of a block container.
+        </p>
+
+        <strong>Example:</strong>
+
+        <p class="first-line">
+            Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+        </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <h2>
+            ::selection
+        </h2>
+
+        <p>
+            The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).
+        </p>
+
+        <strong>Example:</strong>
+
+        <p class="selection">
+            My Name is Nixit Tank
+        </p>
+    </fieldset>
+
+
+
+
+</body>
+
+</html>

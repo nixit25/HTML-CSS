@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+
+    <style>
+        * {
+            border-radius: 15px;
+        }
+
+        .clo1 {
+            border: 2px solid;
+            background-color: goldenrod;
+            border-color: goldenrod;
+            width: 100%;
+            height: 450px;
+        }
+
+        .clo2 {
+            display: flex;
+            border: 2px solid;
+            background-color: bisque;
+            border-color: bisque;
+            margin: 10px;
+            width: 1240px;
+            height: 160px;
+        }
+
+        .clo3 {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            border: 2px solid;
+            background-color: bisque;
+            border-color: bisque;
+            width: 1240px;
+            height: 250px;
+
+        }
+
+        .row1 {
+
+            margin: 10px;
+            border: 2px solid;
+            background-color: blueviolet;
+            border-color: blueviolet;
+            width: 200px;
+            height: 138px;
+            display: flex;
+
+            flex-direction: column-reverse;
+        }
+
+        .row12 {
+
+            margin: 10px;
+            border: 2px solid;
+            background-color: brown;
+            border-color: brown;
+            width: 174px;
+            height: 10px;
+        }
+
+        .row21 {
+            display: flex;
+            margin: 10px;
+            border: 2px solid;
+            background-color: blueviolet;
+            border-color: blueviolet;
+            width: 400px;
+            height: 138px;
+        }
+
+        .row211 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: brown;
+            margin: 5px;
+            width: 100px;
+            height: 126px;
+        }
+
+        .row2111 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: rgb(128, 0, 0);
+            border-color: rgb(128, 0, 0);
+            margin: 10px;
+            margin-left: 25px;
+            width: 50px;
+            height: 40px;
+        }
+
+        .row212 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: brown;
+            margin: 5px;
+            margin-left: 165px;
+            width: 20px;
+            height: 126px;
+
+        }
+
+        .row213 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: brown;
+            margin: 5px;
+            margin-left: 70px;
+            width: 20px;
+            height: 126px;
+
+        }
+
+        .clo31 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: blueviolet;
+            border-color: blueviolet;
+            margin: 5px;
+
+            width: 200px;
+            height: 240px;
+        }
+
+        .clo32 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: blueviolet;
+            border-color: blueviolet;
+            margin: 5px;
+
+            width: 450px;
+            height: 240px;
+
+        }
+
+
+        .clo311 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: brown;
+            margin: 5px;
+
+            width: 188px;
+            height: 25px;
+
+        }
+
+        .clo312 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: brown;
+            margin: 5px;
+            margin-top: 55px;
+            width: 188px;
+            height: 150px;
+
+        }
+
+        .clo3121 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: pink;
+            border-color: pink;
+            margin: 10px;
+
+            width: 170px;
+            height: 20px;
+        }
+
+        .clo3122 {
+            box-sizing: border-box;
+            border: 2px;
+            background-color: pink;
+            border-color: pink;
+            margin: 10px;
+
+            width: 170px;
+            height: 20px;
+        }
+
+        .clo321 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: end;
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: brown;
+            margin: 10px;
+            margin-top: 80px;
+            width: 429px;
+            height: 150px;
+        }
+
+        .clo3211 {
+
+            box-sizing: border-box;
+            border: 2px;
+            background-color: pink;
+            border-color: pink;
+            margin: 10px;
+
+            width: 100px;
+            height: 100px;
+        }
+
+        .clo32111{
+            box-sizing: border-box;
+            border: 2px;
+            background-color: brown;
+            border-color: pink;
+            margin: 10px;
+
+            width: 80px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clo1">
+        <div class="clo2">
+
+            <div class="row1">
+
+                <div class="row12"></div>
+
+            </div>
+
+            <div class="row2">
+
+                <div class="row21">
+
+                    <div class="row211">
+                        <div class="row2111"></div>
+                    </div>
+                    <div class="row212"></div>
+                    <div class="row213"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="clo3">
+
+            <div class="clo31">
+                <div class="clo311"></div>
+                <div class="clo312">
+                    <div class="clo3121"></div>
+                    <div class="clo3122"></div>
+                </div>
+            </div>
+            <div class="clo32">
+                <div class="clo321">
+                    <div class="clo3211">
+                        <div class="clo32111"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

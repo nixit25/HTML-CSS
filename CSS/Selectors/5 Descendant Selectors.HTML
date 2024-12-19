@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        /* this will remove all anchor underline 
+        a{
+            text-decoration: none;
+        } */
+
+
+        /* ul.test>li>a { */
+        ul.test a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><center> Descendant Selectors</center></h1>
+    <header>
+        <nav>
+            <ul class="test">
+                <li><a href="#">Insta</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Google Photos</a></li>
+                <li><a href="#">Telegram</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <div class="test">
+        <p>
+            
+                The text-decoration-style CSS property sets the style of the lines specified by <a href="#">text-decoration-line</a> . The style applies to all lines that are set with text-decoration-line.
+            
+        </p>
+    </div>
+
+
+    <aside>
+        <ul>
+            <li><a href="#">Amazon</a></li>
+            <li><a href="#">Flipkart</a></li>
+            <li><a href="#">Linkedin</a></li>
+            
+        </ul>
+    </aside>
+
+    
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Snapchat</a></li>
+                    <li><a href="#">Spotify</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+</body>
+
+</html>

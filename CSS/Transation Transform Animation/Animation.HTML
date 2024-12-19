@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        h1{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .BOX{
+            margin: 100px auto;
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            /* animation-iteration-count: infinite; */
+            animation: hello 2s infinite;
+        }
+
+        @keyframes hello{
+            0%{transform: rotate(20deg);}
+            100%{transform: rotate(180deg) scale(2); border-radius: 50%;}
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Animation</h1>
+
+    <br>
+    <br>
+
+    <div class="BOX"></div>
+    
+</body>
+</html>

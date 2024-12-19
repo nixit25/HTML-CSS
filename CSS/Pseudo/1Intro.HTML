@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1 Intro</title>
+
+  <style>
+    /* :active pseudo class */
+
+    .active {
+      background-color: slategrey;
+      border: none;
+      width: 140px;
+      height: 40px;
+    }
+
+    a:any-link {
+      color: blueviolet;
+      text-decoration-color: red;
+    }
+
+    input:invalid {
+      border: none;
+      outline: 2px solid red;
+      border-radius: 5px;
+    }
+
+    input:focus {
+      background-color: rgb(194, 209, 224);
+    }
+
+    .checked-input:checked {
+      border: none;
+      outline: 2px solid rgb(16, 247, 3);
+    }
+
+    .default-input {
+      border: none;
+      outline: 2px solid rgb(2, 14, 105);
+    }
+
+    div:empty {
+      outline: 2px solid red;
+      height: 15px;
+    }
+
+    .first li:first-child {
+      outline: 2px solid red;
+    }
+
+    .Focus:focus {
+      background-color: lightslategray;
+    }
+
+    select:focus {
+      background-color: bisque;
+    }
+
+    input:invalid {
+      background-color: ivory;
+      border: none;
+      outline: 2px solid #ff0000;
+      border-radius: 5px;
+    }
+
+    a:visited {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    <center>Pseudo Classes</center>
+  </h1>
+
+  <fieldset>
+    <h1>
+      <center>All CSS Pseudo Classes</center>
+    </h1>
+
+    <table border="1" class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Selector</th>
+          <th style="width: 20%">Example</th>
+          <th>Example description</th>
+        </tr>
+        <tr>
+          <td><a href="/cssref/sel_active.asp">:active</a></td>
+          <td class="notranslate">a:active</td>
+          <td>Selects the active link</td>
+        </tr>
+        <tr>
+          <td><a href="/cssref/sel_checked.asp">:checked</a></td>
+          <td class="notranslate">input:checked</td>
+          <td>Selects every checked &lt;input&gt; element</td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_empty.asp">:empty</a></td>
+          <td class="notranslate">p:empty</td>
+          <td>Selects every &lt;p&gt; element that has no children</td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_firstchild.asp">:first-child</a></td>
+          <td class="notranslate">p:first-child</td>
+          <td>
+            Selects every &lt;p&gt; elements that is the first child of its
+            parent
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_focus.asp">:focus</a></td>
+          <td class="notranslate">input:focus</td>
+          <td>Selects the &lt;input&gt; element that has focus</td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_invalid.asp">:invalid</a></td>
+          <td class="notranslate">input:invalid</td>
+          <td>Selects all &lt;input&gt; elements with an invalid value</td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_last-child.asp">:last-child</a></td>
+          <td class="notranslate">p:last-child</td>
+          <td>
+            Selects every &lt;p&gt; elements that is the last child of its
+            parent
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/cssref/sel_last-of-type.asp">:last-of-type</a></td>
+          <td class="notranslate">p:last-of-type</td>
+          <td>
+            Selects every &lt;p&gt; element that is the last &lt;p&gt; element
+            of its parent
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/cssref/sel_link.asp">:link</a></td>
+          <td class="notranslate">a:link</td>
+          <td>Selects all unvisited links</td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_nth-child.asp">:nth-child(n)</a></td>
+          <td class="notranslate">p:nth-child(2)</td>
+          <td>
+            Selects every &lt;p&gt; element that is the second child of its
+            parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/cssref/sel_nth-last-child.asp">:nth-last-child(n)</a>
+          </td>
+          <td class="notranslate">p:nth-last-child(2)</td>
+          <td>
+            Selects every &lt;p&gt; element that is the second child of its
+            parent, counting from the last child
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_only-child.asp">:only-child</a></td>
+          <td class="notranslate">p:only-child</td>
+          <td>
+            Selects every &lt;p&gt; element that is the only child of its
+            parent
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="/cssref/sel_valid.asp">:valid</a></td>
+          <td class="notranslate">input:valid</td>
+          <td>Selects all &lt;input&gt; elements with a valid value</td>
+        </tr>
+        <tr>
+          <td><a href="/cssref/sel_visited.asp">:visited</a></td>
+          <td class="notranslate">a:visited</td>
+          <td>Selects all visited links</td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:active</h2>
+
+    <p>
+      The :active CSS pseudo-class represents an element (such as a button)
+      that is being activated by the user. When using a mouse, "activation"
+      typically starts when the user presses down the primary mouse button.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <button class="active">Submit</button>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:any-link</h2>
+
+    <p>
+      The :any-link CSS pseudo-class selector represents an element that acts
+      as the source anchor of a hyperlink, independent of whether it has been
+      visited.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link">MDN Web Docs</a>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:autofill</h2>
+
+    <p>
+      The :autofill CSS pseudo-class matches when an &lt; input &gt; element
+      has its value autofilled by the browser. The class stops matching if the
+      user edits the field.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <label for="Name">Name</label> <br />
+    <input type="Name" autocomplete="Name" placeholder="Full Name" />
+
+    <br /><br />
+
+    <label for="Email">Email Addres</label> <br />
+    <input type="Email" name="Email" autocomplete="Email" placeholder="Name@gmail.Com" />
+
+    <br /><br />
+
+    <label for="Country">Country</label> <br />
+    <input type="Country" autocomplete="Country" />
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:checked</h2>
+
+    <p>
+      The :autofill CSS pseudo-class matches when an &lt; input &gt; element
+      has its value autofilled by the browser. The class stops matching if the
+      user edits the field.
+    </p>
+
+    <label><input class="checked-input" type="radio" name="Bule" value="Male" />Male</label>
+    <br /><br />
+    <label><input class="checked-input" type="radio" name="Bule" value="Female" />Female</label>
+
+    <br />
+    <br />
+
+    <label><input class="checked-input" type="checkbox" value="Chess" />Chess</label>
+    <br /><br />
+    <label><input class="checked-input" type="Checkbox" value="Sudoku" />Sudoku</label>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:default</h2>
+
+    <p>
+      The :default CSS pseudo-class selects form elements that are the default
+      in a group of related elements.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <label><input class="default-input" name="origin" type="radio" value="Male" />Male</label>
+    <br /><br />
+    <label><input name="origin" type="radio" name="Bule" value="Female" />Female</label>
+
+    <br />
+    <br />
+
+    <label><input class="default-input" type="checkbox" name="origin" value="Chess" />Chess</label>
+    <br /><br />
+    <label><input type="Checkbox" name="origin" value="Sudoku" />Sudoku</label>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:empty</h2>
+
+    <p>
+      The :empty CSS pseudo-class represents any element that has no children.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <div></div>
+  </fieldset>
+
+  <fieldset>
+    <h2>:first-child</h2>
+
+    <p></p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <ul class="first">
+      <li>HTML</li>
+      <li>Python</li>
+      <li>CSS</li>
+      <li>CSS 3</li>
+      <li>JAVA</li>
+    </ul>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:focus</h2>
+
+    <p>
+      It is generally triggered when the user clicks or taps on an element or
+      selects it with the keyboard's Tab key.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <label for="Name">Name:</label> <br />
+    <input class="Focus" type="text" />
+
+    <br />
+    <br />
+
+    <label for="Coures">Coures:</label> <br />
+
+    <select name="coures" id="">
+      <option value="select your coures">select your coures</option>
+      <option value="Software engineering">Software engineering</option>
+      <option value="Computer engineering">Computer engineering</option>
+      <option value="Data Science">Data Science</option>
+      <option value="Network Security">Network Security</option>
+      <option value="Machine learning">Machine learning</option>
+    </select>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:invalid</h2>
+
+    <p>
+      The :invalid CSS pseudo-class represents any < form> , < fieldset> , < input> or other < form> element whose
+              contents fail to validate.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <label for="Eamli Address">Eamli Address:</label> <br />
+    <input type="email" name="email" id="emali" value="Name@Example.com" />
+
+    <br /><br />
+
+    <label for="Your age">Your age:(18+)</label> <br />
+    <input type="number" value="5" min="18" />
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <h2>:visited</h2>
+
+    <p>
+      The :visited CSS pseudo-class applies once the link has been visited by
+      the user.
+    </p>
+
+    <strong>Example:</strong> <br /><br />
+
+    <a href="https://www.w3schools.com/cssref/sel_visited.php">W3schools in visites tag</a>
+    <br />
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited">mozilla in visites tag</a>
+  </fieldset>
+</body>
+
+</html>

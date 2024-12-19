@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Attribute Selector intro </title>
+
+    <style>
+
+        input[type="text"], 
+        input[type="password"] {
+            outline: 3px solid  red ;
+            border: 3px solid blue ;
+        }
+
+        a[href="#"]{
+            font-size: 20px;
+        }
+
+        a[href$=".in"]{
+            background:linear-gradient(orange,white,green)
+        }
+
+        a[class~="example"] {
+            padding: 2px;
+            color: brown;
+        }
+
+    </style>
+
+</head>
+<body>
+
+ <fieldset>
+    <legend><strong>using outline and border  </strong></legend> <br>
+    <strong>Example:</strong>
+    <p>
+        <pre>
+            input[type="text"], 
+        input[type="password"] {
+            outline: 3px solid  red ;
+            border: 3px solid blue ;
+        }
+
+        </pre>
+
+        <br>
+
+        <strong>Output:</strong>
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+    </p>
+ </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><strong> using Font Big size</strong></legend>
+        
+        <strong>Example:</strong>
+
+        <pre>
+            a[href="#"]{
+                font-size: 20px;
+            }
+        </pre>
+
+        <strong>output:</strong>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing. <a href="#">My Name</a> Labore eum mollitia in hic, ut similique alias, placeat nulla, quas totam rem reiciendis tempore est ea nobis vel saepe iusto. Libero!
+        </p>
+    
+        
+            
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><strong>using multiple background color</strong></legend>
+        <strong>Example:</strong>
+        <pre>
+            a[href$=".in"]{
+                background:linear-gradient(orange,white,green)
+            }
+        </pre>
+
+        
+
+        <strong>output:</strong>
+
+        <a href=".in">India</a>
+        <a href=".uk">UK</a>
+        <a href=".us">US</a>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>
+            <strong>using </strong>
+        </legend>
+        <strong>Example:</strong>
+
+        
+        <pre>
+            a[class~="example"] {
+                padding: 2px;
+                color: brown;
+            }
+    
+        </pre>
+        <strong>output:</strong> <br>
+        
+            <a class="myexample" href="#">myexample a[class*="example"] </a> <br>
+            <a class="my-example" href="#">my-example a[class*="example"] </a> <br>
+            <a class="example" href="#">example a[class*="example"] </a> <br>
+            <a class="example other" href="#">example a[class*="example"] </a> <br>
+            <a class="test example other" href="#">example a[class*="example"] </a> <br>
+
+    </fieldset>
+  
+
+
+
+    
+</body>
+</html>
